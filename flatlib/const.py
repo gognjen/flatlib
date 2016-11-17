@@ -172,7 +172,7 @@ ASC = 'Asc'
 DESC = 'Desc'
 MC = 'MC'
 IC = 'IC'
-
+VERTEX = 'Vx'
 
 # === Fixed Stars === */
 
@@ -282,7 +282,7 @@ LIST_HOUSES = [
 ]
 
 LIST_ANGLES = [
-    ASC, MC, DESC, IC
+    ASC, MC, DESC, IC, VERTEX
 ]
 
 LIST_FIXED_STARS = [
