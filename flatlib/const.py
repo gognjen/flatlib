@@ -172,7 +172,7 @@ ASC = 'Asc'
 DESC = 'Desc'
 MC = 'MC'
 IC = 'IC'
-VERTEX = 'Vx'
+VERTEX = 'Vertex'
 
 # === Fixed Stars === */
 
