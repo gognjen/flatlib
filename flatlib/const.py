@@ -103,6 +103,7 @@ SOUTH_NODE = 'South Node'
 SYZYGY = 'Syzygy'
 PARS_FORTUNA = 'Pars Fortuna'
 NO_PLANET = 'None'
+MIDPOINT = 'Sun/Moon Midpoint'
 
 # Object movement
 DIRECT = 'Direct'
@@ -173,7 +174,6 @@ DESC = 'Desc'
 MC = 'MC'
 IC = 'IC'
 VERTEX = 'Vertex'
-MIDPOINT = 'Midpoint'
 
 # === Fixed Stars === */
 
@@ -283,7 +283,7 @@ LIST_HOUSES = [
 ]
 
 LIST_ANGLES = [
-    ASC, MC, DESC, IC, VERTEX, MIDPOINT
+    ASC, MC, DESC, IC, VERTEX
 ]
 
 LIST_FIXED_STARS = [
