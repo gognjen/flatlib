@@ -173,6 +173,7 @@ DESC = 'Desc'
 MC = 'MC'
 IC = 'IC'
 VERTEX = 'Vertex'
+MIDPOINT = 'Midpoint'
 
 # === Fixed Stars === */
 
@@ -282,7 +283,7 @@ LIST_HOUSES = [
 ]
 
 LIST_ANGLES = [
-    ASC, MC, DESC, IC, VERTEX
+    ASC, MC, DESC, IC, VERTEX, MIDPOINT
 ]
 
 LIST_FIXED_STARS = [
