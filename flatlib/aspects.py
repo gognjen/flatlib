@@ -34,8 +34,8 @@ from . import const
 
 
 # Orb for minor and exact aspects
-MAX_MINOR_ASP_ORB = 3
-MAX_EXACT_ORB = 0.3
+MAX_MINOR_ASP_ORB = 0
+MAX_EXACT_ORB = 0.0
 
 
 # === Private functions === #
