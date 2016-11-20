@@ -46,6 +46,9 @@ def _orbList(obj1, obj2, aspList):
     list of possible aspects. 
     
     """
+    signSep = angle.closestdistance(obj1.lon - obj1.signlon, obj2.lon - obj2.signlon) 
+    absSignSep = abs(signSep)
+    
     sep = angle.closestdistance(obj1.lon, obj2.lon)
     absSep = abs(sep)
     return [
@@ -53,6 +56,7 @@ def _orbList(obj1, obj2, aspList):
             'type': asp,
             'orb': abs(absSep - asp),
             'separation': sep,
+            'out_of_sign': abs(absSignSep - asp) 
         } for asp in aspList
     ]
 
