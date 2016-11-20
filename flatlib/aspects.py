@@ -161,13 +161,14 @@ def _aspectProperties(obj1, obj2, aspDict):
         prop1['movement'] = prop2['movement'] = const.EXACT
     else:
         # Active object applies to Passive if it is before 
-        # and direct, or after the Passive and Rx..
+        # and direct, or after the Passive and Rx..        
         prop1['movement'] = const.SEPARATIVE
-        if (orbDir > 0 and obj1.isDirect()) or \
-                (orbDir < 0 and obj1.isRetrograde()):
-            prop1['movement'] = const.APPLICATIVE
-        elif obj1.isStationary():
-            prop1['movement'] = const.STATIONARY
+        if obj1.isPlanet():
+            if (orbDir > 0 and obj1.isDirect()) or \
+                    (orbDir < 0 and obj1.isRetrograde()):
+                prop1['movement'] = const.APPLICATIVE
+            elif obj1.isStationary():
+                prop1['movement'] = const.STATIONARY
         
         # The Passive applies or separates from the Active 
         # if it has a different direction..
