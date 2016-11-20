@@ -86,11 +86,12 @@ def _aspectDict(obj1, obj2, aspList):
     for aspDict in orbs:
         asp = aspDict['type']
         orb = aspDict['orb']  
+        outOfSign = aspDict['out_of_sign']
         
         # Check if aspect is within orb
         if asp in const.MAJOR_ASPECTS:
             # Ignore major aspects out of orb
-            if obj1.orb() < orb and obj2.orb() < orb:
+            if outOfSign > 0 and obj1.orb() < orb and obj2.orb() < orb:
                 continue
         else:
             # Ignore minor aspects out of max orb
