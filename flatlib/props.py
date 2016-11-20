@@ -202,8 +202,8 @@ class object:
     # Object orbs
     orb = {
         const.NO_PLANET: 0,
-        const.SUN: 15,
-        const.MOON: 12,
+        const.SUN: 10,
+        const.MOON: 10,
         const.MERCURY: 7,
         const.VENUS: 7,
         const.MARS: 8,
@@ -213,12 +213,11 @@ class object:
         const.NEPTUNE: 5,
         const.PLUTO: 5,
         const.CHIRON: 5,
-        const.NORTH_NODE: 12,
-        const.SOUTH_NODE: 12,
+        const.NORTH_NODE: 10,
+        const.SOUTH_NODE: 10,
         const.SYZYGY: 0,
         const.PARS_FORTUNA: 0,
-        const.MIDPOINT: 2,
-        const.VERTEX: 15
+        const.MIDPOINT: 2
     }
     
     # Planet elements
