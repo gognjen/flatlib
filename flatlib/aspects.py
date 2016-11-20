@@ -162,20 +162,23 @@ def _aspectProperties(obj1, obj2, aspDict):
     else:
         # Active object applies to Passive if it is before 
         # and direct, or after the Passive and Rx..        
-        prop1['movement'] = const.SEPARATIVE
         if obj1.isPlanet():
+            prop1['movement'] = const.SEPARATIVE        
             if (orbDir > 0 and obj1.isDirect()) or \
                     (orbDir < 0 and obj1.isRetrograde()):
                 prop1['movement'] = const.APPLICATIVE
             elif obj1.isStationary():
                 prop1['movement'] = const.STATIONARY
-        
+        else:
+            prop1['movement'] = const.NO_MOVEMENT
+            
         # The Passive applies or separates from the Active 
         # if it has a different direction..
         # Note: Non-planets have zero speed
         prop2['movement'] = const.NO_MOVEMENT
-        obj2speed = obj2.lonspeed if obj2.isPlanet() else 0.0
-        sameDir = obj1.lonspeed * obj2speed >= 0
+        obj1speed = obj1.lonspeed if obj1.isPlanet() else 0.0
+        obj2speed = obj2.lonspeed if obj2.isPlanet() else 0.0        
+        sameDir = obj1speed * obj2speed >= 0
         if not sameDir:
             prop2['movement'] = prop1['movement']
         
