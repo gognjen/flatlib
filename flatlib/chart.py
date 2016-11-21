@@ -93,7 +93,7 @@ class Chart:
             return self.getHouse(ID)
         elif ID in const.LIST_ANGLES:
             return self.getAngle(ID)
-        elfi ID == const.MIDPOINT:
+        elif ID == const.MIDPOINT:
             return self.getMidpoint()
         else:
             return self.getObject(ID)
