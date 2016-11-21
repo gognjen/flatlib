@@ -176,7 +176,7 @@ def lunarEclipseGlobal(jd, backward):
         'penumbral_end': sweList[1][7],
     }
 
-def sweMidpoint(obj1, obj2, jd):   
+def sweMidpoint(jd):   
     midpoint = swisseph.deg_midp(
         sweObjectLon(const.SUN, jd), 
         sweObjectLon(const.MOON, jd))
