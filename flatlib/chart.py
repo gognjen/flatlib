@@ -52,6 +52,7 @@ class Chart:
         self.hsys = hsys
         self.objects = ephem.getObjectList(IDs, date, pos)
         self.houses, self.angles = ephem.getHouses(date, pos, hsys)
+        self.midpoint = ephem.getMidpoint(date, pos)
         
     def copy(self):
         """ Returns a deep copy of this chart. """
@@ -62,6 +63,7 @@ class Chart:
         chart.objects = self.objects.copy()
         chart.houses = self.houses.copy()
         chart.angles = self.angles.copy()
+        chart.midpoint = self.mipoint.copy()
         return chart
     
     
@@ -74,6 +76,9 @@ class Chart:
     def getHouse(self, ID):
         """ Returns an house from the chart. """
         return self.houses.get(ID)
+    
+    def getMidpoint(self):
+        return self.midpoint            
     
     def getAngle(self, ID):
         """ Returns an angle from the chart. """
@@ -88,6 +93,8 @@ class Chart:
             return self.getHouse(ID)
         elif ID in const.LIST_ANGLES:
             return self.getAngle(ID)
+        elfi ID == const.MIDPOINT:
+            return self.getMidpoint()
         else:
             return self.getObject(ID)
 
