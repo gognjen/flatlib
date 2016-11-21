@@ -175,3 +175,10 @@ def lunarEclipseGlobal(jd, backward):
         'penumbral_begin': sweList[1][6],
         'penumbral_end': sweList[1][7],
     }
+
+def sweMidpoint(obj1, obj2, jd):   
+    midpoint = swisseph.deg_midp(
+        sweObjectLon(obj1, jd), 
+        sweObjectLon(obj2, jd))
+    return midpoint
+    
