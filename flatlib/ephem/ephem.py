@@ -154,6 +154,6 @@ def nextLunarEclipse(date):
     eclipse = swe.lunarEclipseGlobal(date.jd, backward=False)
     return Datetime.fromJD(eclipse['maximum'], date.utcoffset)
 
-def getMidpoint(date, pos):
-    obj = eph.getMidpoint(date.jd, pos.lat, pos.lon)
+def getMidpoint(date):
+    obj = eph.getMidpoint(date.jd)
     return GenericObject.fromDict(obj)
