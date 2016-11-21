@@ -178,8 +178,8 @@ def lunarEclipseGlobal(jd, backward):
 
 def sweMidpoint(obj1, obj2, jd):   
     midpoint = swisseph.deg_midp(
-        sweObjectLon(obj1, jd), 
-        sweObjectLon(obj2, jd))
+        sweObjectLon(const.SUN, jd), 
+        sweObjectLon(const.MOON, jd))
     return {
         'id': const.MIDPOINT,
         'lon': midpoint
