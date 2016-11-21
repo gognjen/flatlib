@@ -180,5 +180,8 @@ def sweMidpoint(obj1, obj2, jd):
     midpoint = swisseph.deg_midp(
         sweObjectLon(obj1, jd), 
         sweObjectLon(obj2, jd))
-    return midpoint
+    return {
+        'id': const.MIDPOINT,
+        'lon': midpoint
+    }
     
