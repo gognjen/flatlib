@@ -52,7 +52,7 @@ class Chart:
         self.hsys = hsys
         self.objects = ephem.getObjectList(IDs, date, pos)
         self.houses, self.angles = ephem.getHouses(date, pos, hsys)
-        self.midpoint = ephem.getMidpoint(date, pos)
+        self.midpoint = ephem.getMidpoint(date)
         
     def copy(self):
         """ Returns a deep copy of this chart. """
