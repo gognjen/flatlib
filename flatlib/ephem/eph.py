@@ -43,13 +43,19 @@ def getObject(ID, jd, lat, lon):
     elif ID == const.SYZYGY:
         szjd = tools.syzygyJD(jd)
         obj = swe.sweObject(const.MOON, szjd)
-        obj['id'] = const.SYZYGY
+        obj['id'] = const.SYZYGY    
     else:
         obj = swe.sweObject(ID, jd)
     
     _signInfo(obj)
     return obj
 
+# === Midpoint === #
+
+def getMidpoint(ID1, ID2, jd):
+    obj = swe.sweMidpoint(ID1, ID2, jd)
+    _signInfo(obj)
+    return obj
 
 # === Houses === #
 
