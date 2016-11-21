@@ -90,16 +90,14 @@ def _aspectDict(obj1, obj2, aspList):
         
         # Check if aspect is within orb
         if asp in const.MAJOR_ASPECTS:
-            # Ignore major aspects out of orb
-            if outOfSign:
-                continue
-            # if obj1.orb() < orb and obj2.orb() < orb:
-            #     continue
+            # Ignore major aspects out of orb            
+            if obj1.orb() < orb and obj2.orb() < orb or outOfSign:
+                continue            
         else:
             # Ignore minor aspects out of max orb
             if MAX_MINOR_ASP_ORB < orb:
-                continue
-            
+                continue                
+                
         # Only conjunctions for Pars Fortuna and Nodes
         if obj1.id in [const.PARS_FORTUNA, 
                        const.NORTH_NODE, 
