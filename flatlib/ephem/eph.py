@@ -52,8 +52,8 @@ def getObject(ID, jd, lat, lon):
 
 # === Midpoint === #
 
-def getMidpoint(ID1, ID2, jd):
-    obj = swe.sweMidpoint(ID1, ID2, jd)
+def getMidpoint(jd):
+    obj = swe.sweMidpoint(jd)
     _signInfo(obj)
     return obj
 
