@@ -216,8 +216,7 @@ class object:
         const.NORTH_NODE: 10,
         const.SOUTH_NODE: 10,
         const.SYZYGY: 0,
-        const.PARS_FORTUNA: 0,
-        const.MIDPOINT: 2
+        const.PARS_FORTUNA: 0
     }
     
     # Planet elements
