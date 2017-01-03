@@ -204,20 +204,21 @@ class object:
         const.NO_PLANET: 0,
         const.SUN: 10,
         const.MOON: 10,
-        const.MERCURY: 6,
-        const.VENUS: 6,
-        const.MARS: 6,
-        const.JUPITER: 7,
-        const.SATURN: 7,
-        const.URANUS: 5,
-        const.NEPTUNE: 5,
-        const.PLUTO: 6,
-        const.CHIRON: 6,
-        const.NORTH_NODE: 7,
-        const.SOUTH_NODE: 7,
+        const.MERCURY: 10,
+        const.VENUS: 10,
+        const.MARS: 10,
+        const.JUPITER: 10,
+        const.SATURN: 10,
+        const.URANUS: 10,
+        const.NEPTUNE: 10,
+        const.PLUTO: 10,
+        const.CHIRON: 10,
+        const.NORTH_NODE: 0,
+        const.SOUTH_NODE: 0,
         const.SYZYGY: 0,
         const.PARS_FORTUNA: 0
     }
+
     
     # Planet elements
     element = {
@@ -318,6 +319,16 @@ class house:
 # --------------------- #
 
 class aspect:
+    
+    orb = {
+        const.CONJUNCTION: 0,        
+        const.SQUARE: 0,
+        const.TRINE: 0,
+        const.OPPOSITION: 0,
+        const.SEXTILE: 4,
+        
+        const.QUINCUNX: 7,
+    }
     
     # Names
     name = {
