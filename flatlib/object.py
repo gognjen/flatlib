@@ -56,11 +56,8 @@ class GenericObject:
     # === Properties === #
     
     def orb(self):
-        """ Returns the orb of this object. """
-        try:
-            return props.object.orb[self.id]        
-        except:
-            return -1.0
+        """ Returns the orb of this object. """        
+        return -1.0
     
     def isPlanet(self):
         """ Returns if this object is a planet. """
