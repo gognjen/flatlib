@@ -202,19 +202,19 @@ class object:
     # Object orbs
     orb = {
         const.NO_PLANET: 0,
-        const.SUN: 9,
-        const.MOON: 9,
+        const.SUN: 8,
+        const.MOON: 8,
         const.MERCURY: 6,
         const.VENUS: 6,
         const.MARS: 6,
-        const.JUPITER: 9,
-        const.SATURN: 9,
+        const.JUPITER: 8,
+        const.SATURN: 8,
         const.URANUS: 6,
         const.NEPTUNE: 6,
         const.PLUTO: 6,
         const.CHIRON: 6,
-        const.NORTH_NODE: 9,
-        const.SOUTH_NODE: 9,
+        const.NORTH_NODE: 8,
+        const.SOUTH_NODE: 8,
         const.SYZYGY: 0,
         const.PARS_FORTUNA: 0
     }
