@@ -202,8 +202,8 @@ class object:
     # Object orbs
     orb = {
         const.NO_PLANET: 0,
-        const.SUN: 8,
-        const.MOON: 8,
+        const.SUN: 10,
+        const.MOON: 10,
         const.MERCURY: 6,
         const.VENUS: 6,
         const.MARS: 6,
