@@ -207,14 +207,14 @@ class object:
         const.MERCURY: 6,
         const.VENUS: 6,
         const.MARS: 6,
-        const.JUPITER: 8,
-        const.SATURN: 8,
+        const.JUPITER: 7,
+        const.SATURN: 7,
         const.URANUS: 5,
         const.NEPTUNE: 5,
         const.PLUTO: 6,
         const.CHIRON: 6,
-        const.NORTH_NODE: 8,
-        const.SOUTH_NODE: 8,
+        const.NORTH_NODE: 7,
+        const.SOUTH_NODE: 7,
         const.SYZYGY: 0,
         const.PARS_FORTUNA: 0
     }
