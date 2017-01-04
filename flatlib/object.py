@@ -55,7 +55,7 @@ class GenericObject:
     
     # === Properties === #
     
-    def orb(self):
+    def orb(self, aspect=None):
         """ Returns the orb of this object. """        
         return -1.0
     
