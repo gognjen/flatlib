@@ -321,12 +321,22 @@ class house:
 class aspect:
     
     orb = {
-        const.CONJUNCTION: 0,        
+        # Major Aspects
+        const.NO_ASPECT: 0,   
+        const.CONJUNCTION: 0, 
+        const.SEXTILE: 4,  
         const.SQUARE: 0,
         const.TRINE: 0,
-        const.OPPOSITION: 0,
-        const.SEXTILE: 4,
+        const.OPPOSITION: 0,                                          
         
+        # Minor Aspects
+        const.SEMISEXTILE: 7,
+        const.SEMIQUINTILE: 7,
+        const.SEMISQUARE: 7,
+        const.QUINTILE: 8,
+        const.SESQUIQUINTILE: 7,
+        const.SESQUISQUARE: 7,
+        const.BIQUINTILE: 8,
         const.QUINCUNX: 7,
     }
     
