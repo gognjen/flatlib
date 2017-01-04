@@ -57,7 +57,7 @@ class GenericObject:
     
     def orb(self):
         """ Returns the orb of this object. """        
-        return 5.0
+        return -1.0
     
     def isPlanet(self):
         """ Returns if this object is a planet. """
@@ -120,8 +120,10 @@ class Object(GenericObject):
     
     # === Properties === #
     
-    def orb(self):
-        """ Returns the orb of this object. """
+    def orb(self, aspect=None):        
+        """ Returns the orb of this object. """                
+        if aspect:
+            return props.object.orb[self.id] - props.aspects.orb[aspect]
         return props.object.orb[self.id]
     
     def meanMotion(self):
