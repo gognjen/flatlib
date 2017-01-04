@@ -252,7 +252,7 @@ class FixedStar(GenericObject):
     # Map magnitudes to orbs
     _ORBS = [[2, 7.5], [3, 5.5], [4, 3.5], [5, 1.5]]
     
-    def orb(self):
+    def orb(self, aspect=None):
         """ Returns the orb of this fixed star. """
         for (mag, orb) in FixedStar._ORBS:
             if self.mag < mag:
