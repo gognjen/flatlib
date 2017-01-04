@@ -91,7 +91,7 @@ def _aspectDict(obj1, obj2, aspList):
         # Check if aspect is within orb
         if asp in const.MAJOR_ASPECTS:
             # Ignore major aspects out of orb                   
-            if obj1.orb() < orb and obj2.orb() < orb: #or outOfSign:
+            if obj1.orb(asp) < orb and obj2.orb(asp) < orb: #or outOfSign:
                 continue            
         else:
             # Ignore minor aspects out of max orb
@@ -146,8 +146,8 @@ def _aspectProperties(obj1, obj2, aspDict):
         return prop
     
     # Aspect within orb
-    prop1['inOrb'] = orb <= obj1.orb()
-    prop2['inOrb'] = orb <= obj2.orb()
+    prop1['inOrb'] = orb <= obj1.orb(asp)
+    prop2['inOrb'] = orb <= obj2.orb(asp)
     
     # Direction
     prop['direction'] = const.DEXTER if sep <= 0 else const.SINISTER
