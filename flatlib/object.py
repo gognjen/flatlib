@@ -123,7 +123,7 @@ class Object(GenericObject):
     def orb(self, aspect=None):        
         """ Returns the orb of this object. """                
         if aspect:
-            return props.object.orb[self.id] - props.aspects.orb[aspect]
+            return props.object.orb[self.id] - props.aspect.orb[aspect]
         return props.object.orb[self.id]
     
     def meanMotion(self):
